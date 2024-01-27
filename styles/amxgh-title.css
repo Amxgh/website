@@ -3,11 +3,7 @@
     src: url(../Gameplay.ttf);
 }
 
-@media (max-width: 768px) {
-    .title-div {
-        font-size: 1.5em; /* Adjust the value for smaller screens */
-    }
-}
+
 
 .title-div {
     display: flex;
@@ -16,7 +12,7 @@
     vertical-align: middle;
     justify-content: center;
     align-items: center;
-    font-size: 20em;
+    font-size: 2000%;
     transition: position 2s ease-in-out, font-size 0.5s ease-out, transform 2s ease-in-out;
 }
 
