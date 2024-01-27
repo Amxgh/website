@@ -1,25 +1,32 @@
 @font-face {
-    font-family: 'title-font';
+    font-family: "title-font";
     src: url(../Gameplay.ttf);
 }
 
-.title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -50px;
-    width: 100px;
-    height: 100px;
-    display: inline-block;
+.title-div {
+    display: flex;
+    height: 100dvh; /* 100% of the viewport height */
+    width: 100%; /* 100% of the viewport width */
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    font-size: 250px;
+    transition: position 2s ease-in-out, font-size 0.5s ease-out, transform 2s ease-in-out;
 }
 
 .amxgh-title {
-    font-family: 'title-font';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20dvw;
+    font-family: "title-font";
+    position: inherit;
     margin: 0;
+    transition: font-size 1s ease, transform 1s ease;
+}
+
+.welcome-text {
+    position: absolute;
+    font-size: 50px;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    color: #e8cafa;
+    text-align: left;
 }
