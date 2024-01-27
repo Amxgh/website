@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "welcome-font";
+    src: url(../fonts/welcome-font.ttf);
+}
+
+
+.welcome-text-div {
+    position: absolute;
+    height: 100dvh; /* 100% of the viewport height */
+    width: 100%; /* 100% of the viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: position 2s ease-in-out, font-size 0.5s ease-out,
+        transform 2s ease-in-out;
+    top: 0%;
+    font-family: "welcome-font";
+}
+.welcome-text {
+    font-size: 7vw;
+    color: #e8cafa;
+    text-align: left;
+}
+ 
