@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const titleText = "./Amxgh";
+    const titleText = "./AMXGH";
     const titleElement = document.querySelector(".amxgh-title");
     const titleDiv = document.querySelector(".title-div");
     const welcomeText = "Hi, I'm Amogh"
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 2600);
 
     setTimeout(() => {
-        titleDiv.style.fontSize = "50px";
+        titleDiv.style.fontSize = "7vw";
         titleDiv.style.display = "flex";
         titleDiv.style.transform = "translatey(-40%)";
         titleDiv.style.top = "50px";
