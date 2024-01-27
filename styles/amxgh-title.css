@@ -9,10 +9,9 @@
     display: flex;
     height: 100dvh; /* 100% of the viewport height */
     width: 100%; /* 100% of the viewport width */
-    vertical-align: middle;
     justify-content: center;
     align-items: center;
-    font-size: 2000%;
+    font-size: 20vw;
     transition: position 2s ease-in-out, font-size 0.5s ease-out, transform 2s ease-in-out;
 }
 
@@ -20,6 +19,7 @@
     font-family: "title-font";
     position: inherit;
     margin: 0;
+    text-align: center;
     transition: font-size 1s ease, transform 1s ease;
 }
 
