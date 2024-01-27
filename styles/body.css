@@ -2,9 +2,10 @@ body {
     transition: background-color 0.5s ease-in;
     transition: color 5s ease-out;
     color: black;
+    overflow: hidden;
 }
 
 .black-blackground{
     background-color: black;
-    color: white;
+    color: #e3bdf2;
 }
