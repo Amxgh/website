@@ -24,7 +24,8 @@
     top: 0;
     transform: translateX(-50%); /* Keep centered horizontally */
     font-size: 7vw; /* Adjust font size if needed */
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .amxgh-title {
