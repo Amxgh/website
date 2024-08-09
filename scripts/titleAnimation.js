@@ -2,8 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const titleText = "./AMXGH";
     const titleElement = document.querySelector(".amxgh-title");
     const titleDiv = document.querySelector(".title-div");
-    const welcomeText = "Hi, I'm Amogh"
-    const welcomeTextElement = document.querySelector(".welcome-text");
+    const projects = document.getElementById("projects");
 
     const bodyElement = document.body;
 
@@ -45,19 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 2600);
 
     setTimeout(() => {
-        titleDiv.style.fontSize = "7vw";
-        titleDiv.style.display = "flex";
-        titleDiv.style.transform = "translatey(-40%)";
-        titleDiv.style.top = "50px";
-        titleDiv.style.left = "50%";
+        titleDiv.classList.add("moved"); // Add the class to move the text
     }, 4000);
 
-    // Trigger the animation when the page is loaded
     setTimeout(() => {
-        for (let i = 0; i < welcomeText.length+1; i++) {
-            setTimeout(() => {
-                welcomeTextElement.textContent = welcomeText.slice(0,i);
-            }, i * 200);
-        }
-    }, 5000); // Adjust the delay based on your preference
+        projects.style.opacity = "1"; // Make the element visible
+    }, 5500);
 });
