@@ -3,26 +3,34 @@
     src: url(../fonts/Gameplay.ttf);
 }
 
-
-
 .title-div {
     display: flex;
-    height: 100dvh; /* 100% of the viewport height */
-    width: 100%; /* 100% of the viewport width */
+    width: 100%;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* Center vertically */
     font-size: 20vw;
-    transition: position 2s ease-in-out, font-size 0.5s ease-out, transform 2s ease-in-out;
+    transition: font-size 0.5s ease-out, transform 2s ease-in-out, top 2s ease-in-out;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    position: absolute; /* Use absolute positioning for centering */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset to center the text */
+}
+
+.title-div.moved {
+    align-items: flex-start; /* Move to top */
+    top: 0;
+    transform: translateX(-50%); /* Keep centered horizontally */
+    font-size: 7vw; /* Adjust font size if needed */
+    margin-top: 5px;
 }
 
 .amxgh-title {
     font-family: "title-font";
-    position: inherit;
     margin: 0;
     text-align: center;
     transition: font-size 1s ease, transform 1s ease;
     will-change: transform, font-size;
-
 }
-
-
